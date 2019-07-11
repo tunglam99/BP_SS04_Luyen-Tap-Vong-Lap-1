@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =b =1;
+    let kiemTra = true;
+    while (kiemTra) {
+        if ((a+b) %5 !== 0) {
+            let total = a+b;
+            a = b;
+            b = total;
+        }else {
+            kiemTra = false;
+        }
+    }
+    document.write(a+b);
+</script>
+</body>
+</html>
